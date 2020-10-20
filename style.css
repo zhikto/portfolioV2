@@ -12,15 +12,23 @@ a {
   width: 100%;
   display: flex; }
 
+.directory {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  z-index: 300;
+  bottom: 0;
+  left: 0; }
+  .directory p {
+    font-weight: bold;
+    color: #434343; }
+
 .content-box {
-  justify-content: space-between;
   flex-wrap: wrap;
-  padding-bottom: 120px; }
+  justify-content: space-between; }
 
 .box {
   position: relative;
-  width: 24%;
-  margin-bottom: 1%;
   overflow: hidden; }
   .box:before {
     content: "";
@@ -45,92 +53,190 @@ a {
   background: rgba(0, 0, 0, 0.16);
   backdrop-filter: blur(8px);
   transition: opacity 0.5s;
-  padding: 16px 24px;
   box-sizing: border-box; }
   .content-cover:hover {
     opacity: 1; }
   .content-cover .content-title {
     width: 100%;
-    font-size: 24px;
     color: white;
-    font-weight: bold;
-    margin-bottom: 8px; }
+    font-weight: bold; }
   .content-cover .content-subtitle {
     width: 100%;
-    font-size: 16px;
     color: white;
     font-weight: normal; }
-
-.box:nth-child(1) {
-  width: 100%; }
-  .box:nth-child(1) .content .content-cover {
-    padding: 32px 48px; }
-    .box:nth-child(1) .content .content-cover .content-title {
-      font-size: 32px;
-      margin-bottom: 16px; }
-    .box:nth-child(1) .content .content-cover .content-subtitle {
-      font-size: 24px; }
-.box:nth-child(2), .box:nth-child(3) {
-  width: 49.4%; }
 
 footer {
   z-index: 200;
   position: fixed;
   bottom: 0;
-  height: 104px;
   background-color: white;
   align-items: center;
   justify-content: space-between; }
   footer .logo {
-    margin-left: 96px;
-    font-size: 24px;
     font-weight: bold;
     color: #434343; }
-  footer .about {
-    margin-right: 96px;
-    width: 40px;
-    height: 40px; }
-    footer .about img {
-      width: 100%; }
+  footer .about img {
+    width: 100%; }
 
 .detail-box {
-  width: 100vw;
-  height: 100vh;
-  padding: 200px 204px 0;
-  box-sizing: border-box;
-  overflow: hidden; }
+  width: 100%; }
   .detail-box h1 {
     width: 100%;
-    font-weight: 32px;
-    margin-bottom: 24px;
-    color: #434343; }
+    font-weight: bold;
+    color: #434343;
+    box-sizing: border-box; }
   .detail-box .tag-area {
     width: 100%;
     display: flex;
-    margin-bottom: 48px;
     align-items: center; }
     .detail-box .tag-area .tag {
       font-weight: bold;
-      color: #D5D5D5;
-      font-size: 16px;
-      padding: 12px 24px;
-      border-radius: 40px;
-      border: 3px solid #EEEEEE;
-      margin-right: 16px; }
+      color: #D5D5D5; }
   .detail-box .detail {
     width: 100%;
     display: flex;
-    align-items: center; }
-    .detail-box .detail .detail-img {
-      width: 50%; }
-      .detail-box .detail .detail-img img {
-        width: 100%; }
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; }
+    .detail-box .detail .detail-img img {
+      width: 100%; }
     .detail-box .detail .detail-text {
-      width: 50%;
-      padding: 20px 48px;
-      font-size: 20px;
+      box-sizing: border-box;
       font-weight: bold;
-      color: #434343;
+      color: #434343; }
+
+.detail-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  overflow: hidden; }
+
+@media screen and (max-width: 834px) {
+  .directory {
+    margin-left: 138px;
+    margin-bottom: 18px; }
+    .directory p {
+      font-size: 14px;
+      margin-right: 4px; }
+
+  .content-box {
+    padding-bottom: 56px; }
+
+  .content-cover {
+    padding: 16px 24px; }
+    .content-cover .content-title {
+      font-size: 20px;
+      margin-bottom: 4px; }
+    .content-cover .content-subtitle {
+      font-size: 14px; }
+
+  .box {
+    width: 100%;
+    margin-bottom: 0.5%; }
+
+  footer {
+    height: 56px; }
+    footer .logo {
+      margin-left: 24px;
+      font-size: 14px; }
+    footer .about {
+      margin-right: 24px;
+      width: 20px;
+      height: 20px; }
+
+  .detail-area {
+    padding: 0; }
+
+  .detail-box h1 {
+    width: 100%;
+    margin: 0 40px 10px;
+    font-size: 16px; }
+  .detail-box .tag-area {
+    margin: 0 40px 14px; }
+    .detail-box .tag-area .tag {
+      font-size: 10px;
+      padding: 8px 14px;
+      border-radius: 32px;
+      border: 1px solid #EEEEEE;
+      margin-right: 8px; }
+  .detail-box .detail .detail-img {
+    width: 100%; }
+  .detail-box .detail .detail-text {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 14px 40px;
+    font-size: 12px;
+    line-height: 30px; } }
+@media screen and (min-width: 835px) {
+  .directory {
+    margin-left: 295px;
+    margin-bottom: 35px; }
+    .directory p {
+      font-size: 24px;
+      margin-right: 8px; }
+
+  .content-box {
+    padding-bottom: 120px; }
+
+  .box {
+    width: 24.6%;
+    margin-bottom: 0.5%; }
+
+  .content-cover {
+    padding: 16px 24px; }
+    .content-cover .content-title {
+      font-size: 24px;
+      margin-bottom: 8px; }
+    .content-cover .content-subtitle {
+      font-size: 16px; }
+
+  .box:nth-child(1) {
+    width: 100%; }
+    .box:nth-child(1) .content .content-cover {
+      padding: 32px 48px; }
+      .box:nth-child(1) .content .content-cover .content-title {
+        font-size: 32px;
+        margin-bottom: 16px; }
+      .box:nth-child(1) .content .content-cover .content-subtitle {
+        font-size: 24px; }
+  .box:nth-child(2), .box:nth-child(3) {
+    width: 49.75%; }
+
+  footer {
+    height: 104px; }
+    footer .logo {
+      margin-left: 96px;
+      font-size: 24px; }
+    footer .about {
+      margin-right: 96px;
+      width: 40px;
+      height: 40px; }
+
+  .detail-box {
+    margin-bottom: 104px; }
+    .detail-box h1 {
+      font-size: 32px;
+      margin-bottom: 24px; }
+    .detail-box .tag-area {
+      margin-bottom: 48px; }
+      .detail-box .tag-area .tag {
+        font-size: 16px;
+        padding: 12px 24px;
+        border-radius: 40px;
+        border: 3px solid #EEEEEE;
+        margin-right: 16px; }
+    .detail-box .detail .detail-img {
+      width: 516px; }
+    .detail-box .detail .detail-text {
+      width: 516px;
+      padding: 20px 48px;
+      font-size: 16px;
       line-height: 40px; }
+
+  .detail-area {
+    padding: 0 152px 0; } }
 
 /*# sourceMappingURL=style.css.map */
