@@ -159,26 +159,28 @@ footer {
   .detail-area {
     padding: 0; }
 
-  .detail-box h1 {
-    width: 100%;
-    margin: 0 40px 10px;
-    font-size: 16px; }
-  .detail-box .tag-area {
-    margin: 0 40px 14px; }
-    .detail-box .tag-area .tag {
-      font-size: 10px;
-      padding: 8px 14px;
-      border-radius: 32px;
-      border: 1px solid #EEEEEE;
-      margin-right: 8px; }
-  .detail-box .detail .detail-img {
-    width: 100%; }
-  .detail-box .detail .detail-text {
-    width: 100%;
-    box-sizing: border-box;
-    margin: 14px 40px;
-    font-size: 12px;
-    line-height: 30px; } }
+  .detail-box {
+    margin-bottom: 56px; }
+    .detail-box h1 {
+      width: 100%;
+      margin: 0 40px 10px;
+      font-size: 16px; }
+    .detail-box .tag-area {
+      margin: 0 40px 14px; }
+      .detail-box .tag-area .tag {
+        font-size: 10px;
+        padding: 8px 14px;
+        border-radius: 32px;
+        border: 1px solid #EEEEEE;
+        margin-right: 8px; }
+    .detail-box .detail .detail-img {
+      width: 100%; }
+    .detail-box .detail .detail-text {
+      width: 100%;
+      box-sizing: border-box;
+      margin: 14px 40px;
+      font-size: 12px;
+      line-height: 30px; } }
 @media screen and (min-width: 835px) {
   .directory {
     margin-left: 287px;
