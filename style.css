@@ -172,8 +172,8 @@ footer {
     line-height: 30px; } }
 @media screen and (min-width: 835px) {
   .directory {
-    margin-left: 295px;
-    margin-bottom: 35px; }
+    margin-left: 287px;
+    margin-bottom: 31px; }
     .directory p {
       font-size: 24px;
       margin-right: 8px; }
@@ -206,12 +206,12 @@ footer {
     width: 49.75%; }
 
   footer {
-    height: 104px; }
+    height: 88px; }
     footer .logo {
-      margin-left: 96px;
+      margin-left: 88px;
       font-size: 24px; }
     footer .about {
-      margin-right: 96px;
+      margin-right: 88px;
       width: 40px;
       height: 40px; }
 
