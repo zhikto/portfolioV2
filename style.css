@@ -1,3 +1,9 @@
+/*
+Theme Name:TAITO HASEGAWA PORTFOLIO THEME
+Description:this is theme for my portfolio
+Author:Taito Hasegawa
+Version:2.0
+*/
 * {
   padding: 0;
   margin: 0; }
@@ -73,10 +79,13 @@ footer {
   align-items: center;
   justify-content: space-between; }
   footer .logo {
+    box-sizing: border-box;
     font-weight: bold;
     color: #434343; }
-  footer .about img {
-    width: 100%; }
+  footer .about {
+    box-sizing: border-box; }
+    footer .about img {
+      width: 100%; }
 
 .detail-box {
   width: 100%; }
