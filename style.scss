@@ -205,6 +205,7 @@ footer {
 
     footer {
         height: 56px;
+        bottom: calc(env(safe-area-inset-bottom) + 44px);
     
         .logo {
             margin-left: 24px;
@@ -224,7 +225,7 @@ footer {
 
     .detail-box {
         margin-bottom: 56px;
-        
+
         h1 {
             width: 100%;
             margin: 0 40px 10px;
