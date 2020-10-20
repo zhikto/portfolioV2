@@ -8,16 +8,14 @@ html, body {
 a {
   text-decoration: none; }
 
-body {
-  padding-bottom: 120px; }
-
 .container {
   width: 100%;
   display: flex; }
 
 .content-box {
   justify-content: space-between;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  padding-bottom: 120px; }
 
 .box {
   position: relative;
@@ -93,5 +91,45 @@ footer {
     height: 40px; }
     footer .about img {
       width: 100%; }
+
+.detail-box {
+  width: 100vw;
+  height: 100vh;
+  padding: 200px 204px 0;
+  box-sizing: border-box;
+  overflow: hidden; }
+  .detail-box h1 {
+    width: 100%;
+    font-weight: 32px;
+    margin-bottom: 24px;
+    color: #434343; }
+  .detail-box .tag-area {
+    width: 100%;
+    display: flex;
+    margin-bottom: 48px;
+    align-items: center; }
+    .detail-box .tag-area .tag {
+      font-weight: bold;
+      color: #D5D5D5;
+      font-size: 16px;
+      padding: 12px 24px;
+      border-radius: 40px;
+      border: 3px solid #EEEEEE;
+      margin-right: 16px; }
+  .detail-box .detail {
+    width: 100%;
+    display: flex;
+    align-items: center; }
+    .detail-box .detail .detail-img {
+      width: 50%; }
+      .detail-box .detail .detail-img img {
+        width: 100%; }
+    .detail-box .detail .detail-text {
+      width: 50%;
+      padding: 20px 48px;
+      font-size: 20px;
+      font-weight: bold;
+      color: #434343;
+      line-height: 40px; }
 
 /*# sourceMappingURL=style.css.map */
