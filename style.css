@@ -45,7 +45,8 @@ a {
   background: rgba(0, 0, 0, 0.16);
   backdrop-filter: blur(8px);
   transition: opacity 0.5s;
-  padding: 16px 24px; }
+  padding: 16px 24px;
+  box-sizing: border-box; }
   .content-cover:hover {
     opacity: 1; }
   .content-cover .content-title {
