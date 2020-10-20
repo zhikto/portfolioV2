@@ -147,8 +147,7 @@ footer {
     margin-bottom: 0.5%; }
 
   footer {
-    height: 56px;
-    bottom: calc(env(safe-area-inset-bottom) + 44px); }
+    height: 56px; }
     footer .logo {
       margin-left: 24px;
       font-size: 14px; }
